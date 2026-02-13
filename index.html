@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/quiz.png" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <main
+      class="min-vh-100 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="heading animate__animated animate__bounceIn">
+        <h1 class="mb-0">Quiz App</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <form
+            class="mx-auto start-quiz col-lg-8 d-flex flex-column gap-3 animate__animated animate__fadeInBottomLeft"
+            id="quizOption"
+          >
+            <div class="form-floating">
+              <select
+                class="form-select"
+                id="catgoryMenu"
+                aria-label="catgory select"
+              >
+                <option selected value="">Any Catogery</option>
+                <option value="9">General Knowledge</option>
+                <option value="27">Animals</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="18">Science: Computers</option>
+                <option value="22">Geography</option>
+              </select>
+            </div>
+            <div class="form-floating">
+              <select
+                class="form-select"
+                id="formDiffculty"
+                aria-label="catgory select"
+              >
+                <option selected value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </div>
+            <div class="form-floating">
+              <input type="number" id="amount" class="form-control" />
+            </div>
+            <button class="btn btn-primary" id="startQuiz">Start</button>
+          </form>
+        </div>
+        <div id="qeustionBox"></div>
+      </div>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
